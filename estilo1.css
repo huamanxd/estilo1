@@ -1,9 +1,28 @@
+* { box-sizing: border-box; }
 .container{
 display:flex;
+               /* separaciones entre tarjetas */
+  height: clamp(860px, 28vh, 1020px);
+  padding: 12px;          /* espacio interno */
+  border: 4px solid #111; /* borde grueso del marco */
+  border-radius: 16px;    /* esquinas redondeadas */
+  background: #f4f4f4;    /* fondo claro del marco */
 }
 
 .container div{
-flex-grow: 1;
+  flex-grow: 1;
+  flex: 1 1 0;            /* = grow:1; shrink:1; basis:0  (todos iguales) */
+  min-width: 0;           /* evita desbordes de texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #b86e2b;    /* color de las tarjetas */
+  border: 4px solid #111; /* borde a cada tarjeta (opcional) */
+  border-radius: 10px;
+  font: 600 22px/1.1 system-ui, sans-serif;
+  cursor: pointer;
+  transition: flex-grow .35s ease; /* animación suave */
 }
 
 .container div:hover{

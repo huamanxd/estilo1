@@ -3,9 +3,9 @@ display:flex;
 }
 
 .container div{
-flex-grow: 1px;
+flex-grow: 1;
 }
 
 .container div:hover{
-flex-grow: 10px;
+flex-grow: 10;
 }

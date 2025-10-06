@@ -1,0 +1,11 @@
+.container{
+display:flex;
+}
+
+.container div{
+flex-grow: 1px;
+}
+
+.container div:hover{
+flex-frow: 10px;
+}

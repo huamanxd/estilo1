@@ -7,5 +7,5 @@ flex-grow: 1px;
 }
 
 .container div:hover{
-flex-frow: 10px;
+flex-grow: 10px;
 }
